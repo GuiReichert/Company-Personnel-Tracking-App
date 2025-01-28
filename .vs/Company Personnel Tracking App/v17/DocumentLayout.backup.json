@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GTXRo\\Desktop\\Programa\u00E7\u00E3o\\Projetos\\Company Personnel Tracking App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6EAEBE-3D39-4EE4-A30E-83AE7022FCA3}|Company Personnel Tracking App\\Company Personnel Tracking App.csproj|c:\\users\\gtxro\\desktop\\programa\u00E7\u00E3o\\projetos\\company personnel tracking app\\company personnel tracking app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0A6EAEBE-3D39-4EE4-A30E-83AE7022FCA3}|Company Personnel Tracking App\\Company Personnel Tracking App.csproj|solutionrelative:company personnel tracking app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A6EAEBE-3D39-4EE4-A30E-83AE7022FCA3}|Company Personnel Tracking App\\Company Personnel Tracking App.csproj|c:\\users\\gtxro\\desktop\\programa\u00E7\u00E3o\\projetos\\company personnel tracking app\\company personnel tracking app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0A6EAEBE-3D39-4EE4-A30E-83AE7022FCA3}|Company Personnel Tracking App\\Company Personnel Tracking App.csproj|solutionrelative:company personnel tracking app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\GTXRo\\Desktop\\Programa\u00E7\u00E3o\\Projetos\\Company Personnel Tracking App\\Company Personnel Tracking App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Company Personnel Tracking App\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\GTXRo\\Desktop\\Programa\u00E7\u00E3o\\Projetos\\Company Personnel Tracking App\\Company Personnel Tracking App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Company Personnel Tracking App\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwCIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T05:58:14.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\GTXRo\\Desktop\\Programa\u00E7\u00E3o\\Projetos\\Company Personnel Tracking App\\Company Personnel Tracking App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Company Personnel Tracking App\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\GTXRo\\Desktop\\Programa\u00E7\u00E3o\\Projetos\\Company Personnel Tracking App\\Company Personnel Tracking App\\MainWindow.xaml",
+              "RelativeToolTip": "Company Personnel Tracking App\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-13T05:58:15.835Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

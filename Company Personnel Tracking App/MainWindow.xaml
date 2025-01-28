@@ -1,0 +1,191 @@
+﻿<Window x:Name="PersonnelMainWindow" x:Class="Company_Personnel_Tracking_App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Company_Personnel_Tracking_App"
+        xmlns:Views="clr-namespace:Company_Personnel_Tracking_App.Views"
+        xmlns:ViewModels="clr-namespace:Company_Personnel_Tracking_App.ViewModels"
+        
+        
+        mc:Ignorable="d"
+        Title="Personnel Tracking App" Height="540" Width="1200" FontSize="24" FontWeight="Bold" Background="#FFA9AAFF" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Loaded="PersonnelMainWindow_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <ContentControl Grid.Column="1" Content="{Binding}" Grid.Row="1" Grid.RowSpan="8" Height="NaN" Width="NaN"/>
+        <Label x:Name="lblWindowName" Grid.Column="1" Content="Window's Name" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="36"/>
+        <StackPanel Grid.Row="1" Margin="0,2,0,0">
+            <Button Grid.Row="1" Name="btnEmployee" Height="60" Width="250" HorizontalAlignment="Left" Click="btnEmployee_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Employee" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0,2,0,0">
+            <Button Grid.Row="2" Name="btnTask" Height="60" Width="250" HorizontalAlignment="Left" Click="btnTask_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Task" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="3" Margin="0,2,0,0">
+            <Button Grid.Row="3" Name="btnSalary" Height="60" Width="250" HorizontalAlignment="Left" Click="btnSalary_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Salary" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="4" Margin="0,2,0,0">
+            <Button Grid.Row="4" Name="btnPermissions" Height="60" Width="250" HorizontalAlignment="Left" Click="btnPermissions_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Permissions" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+        <StackPanel Grid.Row="5" Margin="0,2,0,0">
+            <Button Grid.Row="5" Name="btnDepartment" Height="60" Width="250" HorizontalAlignment="Left" Click="btnDepartment_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Department" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="6" Margin="0,2,0,0">
+            <Button Grid.Row="6" Name="btnPosition" Height="60" Width="250" HorizontalAlignment="Left" Click="btnPosition_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Position" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="7" Margin="0,2,0,0">
+            <Button Grid.Row="7" Name="btnLogOut" Height="60" Width="250" HorizontalAlignment="Left" Click="btnLogOut_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Log Out" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+        <StackPanel Grid.Row="9" Margin="0,2,0,0">
+            <Button Grid.Row="9" Name="btnExit" Height="60" Width="250" HorizontalAlignment="Left" Click="btnExit_Click">
+                <Grid Width="230">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="auto"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Exit" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                </Grid>
+
+            </Button>
+
+
+        </StackPanel>
+
+
+    </Grid>
+    <Window.Resources>
+        <DataTemplate x:Name="DepartmentTemplate" DataType="{x:Type ViewModels:DepartmentViewModel}">
+            <Views:DepartmentList>
+                
+            </Views:DepartmentList>
+        </DataTemplate>
+
+        <DataTemplate x:Name="PositionTemplate" DataType="{x:Type ViewModels:PositionViewModel}">
+            <Views:PositionList>
+                
+            </Views:PositionList>
+            
+        </DataTemplate>
+
+        <DataTemplate x:Name="EmployeeTemplate" DataType="{x:Type ViewModels:EmployeeViewModel}">
+            <Views:EmployeeList>
+
+            </Views:EmployeeList>
+        </DataTemplate>
+
+        <DataTemplate x:Name="TaskTemplate" DataType="{x:Type ViewModels:TaskViewModel}">
+            <Views:TaskList>
+                
+            </Views:TaskList>
+        </DataTemplate>
+
+        <DataTemplate x:Name="SalaryTemplate" DataType="{x:Type ViewModels:SalaryViewModel}">
+            <Views:SalaryList>
+                
+            </Views:SalaryList>
+        </DataTemplate>
+
+        <DataTemplate x:Name="PermissionTemplate" DataType="{x:Type ViewModels:PermissionViewModel}">
+            <Views:PermissionList>
+                
+            </Views:PermissionList>
+        </DataTemplate>
+
+    </Window.Resources>
+    
+    
+</Window>
