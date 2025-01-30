@@ -33,7 +33,20 @@ namespace Company_Personnel_Tracking_App.Views
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if(txtUserNo.Text.Trim() =="" || txtPassword.Text.Trim() == "")
+            if(chckGuest.IsChecked == true)
+            {
+                this.Visibility = Visibility.Collapsed;
+                MainWindow main = new MainWindow();
+
+                Employee admin = db.Employees.FirstOrDefault(x => x.UserNo == 1)!;
+                UserStatic.EmployeeId = admin.Id;
+                UserStatic.UserNo = admin.UserNo;
+                UserStatic.Name = admin.Name;
+                UserStatic.Surname = admin.Surname;
+                UserStatic.isAdmin = (bool)admin.IsAdmin;
+                main.ShowDialog();
+            }
+            else if(txtUserNo.Text.Trim() =="" || txtPassword.Text.Trim() == "")
             {
                 MessageBox.Show("Please fill both fields");
             }
@@ -62,6 +75,19 @@ namespace Company_Personnel_Tracking_App.Views
         private void txtUserNo_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = new Regex("[^0-9]+").IsMatch(e.Text);
+        }
+
+        private void chckGuest_Checked(object sender, RoutedEventArgs e)
+        {
+            txtUserNo.IsEnabled = false;
+            txtPassword.IsEnabled = false;
+
+        }
+
+        private void chckGuest_Unchecked(object sender, RoutedEventArgs e)
+        {
+            txtUserNo.IsEnabled = true;
+            txtPassword.IsEnabled = true;
         }
     }
 }

@@ -187,3 +187,4 @@ C:\Users\GTXRo\Desktop\Programação\Projetos\Company Personnel Tracking App\Com
 C:\Users\GTXRo\Desktop\Programação\Projetos\Company Personnel Tracking App\Company Personnel Tracking App\obj\Debug\net8.0-windows7.0\Views\PermissionList.baml
 C:\Users\GTXRo\Desktop\Programação\Projetos\Company Personnel Tracking App\Company Personnel Tracking App\obj\Debug\net8.0-windows7.0\Views\AddPermissionWindow.g.cs
 C:\Users\GTXRo\Desktop\Programação\Projetos\Company Personnel Tracking App\Company Personnel Tracking App\obj\Debug\net8.0-windows7.0\Views\AddPermissionWindow.baml
+C:\Users\GTXRo\Desktop\Programação\Projetos\Company Personnel Tracking App\Company Personnel Tracking App\obj\Debug\net8.0-windows7.0\Company Personnel Tracking App.sourcelink.json
